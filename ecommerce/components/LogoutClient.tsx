@@ -7,7 +7,6 @@ import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks';
 import { LogOut } from 'lucide-react';
 import { useRouter } from 'next/navigation'
 import React from 'react'
-import { route } from 'sanity/router';
 
 const LogoutClient = () => {
     const dispatch = useAppDispatch()
