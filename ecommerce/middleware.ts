@@ -6,7 +6,7 @@ export function middleware(req: NextRequest) {
 
   const protectedRoutes = 
       pathname.startsWith("/checkout") ||
-      pathname.startsWith("/profile") 
+      pathname.startsWith("/profile") ;
       
       if (!token && protectedRoutes) {
     return NextResponse.redirect(new URL("/login", req.url));
