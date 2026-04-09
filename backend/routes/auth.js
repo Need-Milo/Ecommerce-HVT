@@ -27,15 +27,9 @@ router.post("/login", (req, res) => {
    }
   );
 
-  res.cookie("token", token, {
-    httpOnly: true,
-    sameSite: "none",
-    maxAge: 60*60*1000,
-    secure: true,
-    path: "/"
-  }  )
 
   res.json({
+    token,
     user: {
      id: user.id,
     name: user.name,
@@ -67,16 +61,11 @@ router.post("/register", (req, res) => {
     {expiresIn: "1h"}
    )
 
-   res.cookie("token", token, {
-    httpOnly: true,
-    sameSite: "none",
-    secure: true,
-    maxAge: 60*60*1000 
-   })
 
    usersData.push(newUser);
 
    res.status(201).json({
+    token,
     message: "Đăng ký thành công",
      user: {
       id: newUser.id,
@@ -89,13 +78,6 @@ router.post("/register", (req, res) => {
 } )
 
 router.post("/logout", (req,res) => {
-  res.clearCookie("token", {
-    httpOnly: true,
-    sameSite: "none",
-    secure: true,
-    path: "/"
-  })
-
   res.json({message: "Đã đăng xuất"})
 
 }  ) 

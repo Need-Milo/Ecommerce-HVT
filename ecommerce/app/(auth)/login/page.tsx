@@ -2,11 +2,10 @@
 
 import "../../globals.css";
 import { useAppDispatch, useAppSelector } from "@/lib/redux/hooks";
-import { loginThunk } from "@/lib/redux/auth/authThunk";
+import { loginThunk, logoutThunk } from "@/lib/redux/auth/authThunk";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { clearAuth } from "@/lib/redux/auth/authSlice";
 import { clearCart } from "@/lib/redux/carts/cartsSlice";
 import { fetchCart } from "@/lib/redux/carts/cartsThunk";
 
@@ -33,7 +32,7 @@ export default function LoginPage() {
 }, [user, router,dispatch]);
 
 useEffect(() => {
-  dispatch(clearAuth());
+  dispatch(logoutThunk());
 }, [dispatch]);
 
   return (

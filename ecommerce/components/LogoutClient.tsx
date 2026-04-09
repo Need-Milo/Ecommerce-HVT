@@ -2,6 +2,7 @@
 
 import { logout } from '@/lib/api/authApi';
 import { clearAuth } from '@/lib/redux/auth/authSlice';
+import { logoutThunk } from '@/lib/redux/auth/authThunk';
 import { clearCart } from '@/lib/redux/carts/cartsSlice';
 import { useAppDispatch, useAppSelector } from '@/lib/redux/hooks';
 import { LogOut } from 'lucide-react';
@@ -17,7 +18,7 @@ const LogoutClient = () => {
          await logout();
          
       } catch(e) {} 
-      dispatch(clearAuth())
+      dispatch(logoutThunk())
       dispatch(clearCart())
         router.push("/login");
        router.refresh();

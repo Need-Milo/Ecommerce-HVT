@@ -4,7 +4,8 @@ import { usersData } from "../data/user.js";
 const JWT_SECRET = "MY_SECRET_KEY";
 
 export const authMiddleware = (req, res, next) => {
-  const token = req.cookies.token;
+  const authHeader = req.headers.authorization;
+  const token = authHeader?.split(" ")[1];
 
   if (!token) {
     return res.status(401).json({ message: "Chưa đăng nhập" });

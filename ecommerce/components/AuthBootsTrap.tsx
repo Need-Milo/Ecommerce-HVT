@@ -9,7 +9,10 @@ const AuthBootsTrap = () => {
     const dispatch = useAppDispatch()
     const user = useAppSelector(state => state.auth.user)
     useEffect(() => {
-        dispatch(getMeThunk())
+         const token = localStorage.getItem("token")
+         if(token){
+            dispatch(getMeThunk())
+         }      
     } ,[dispatch])
     useEffect(() => {
         if(user?.id || user?._id ){

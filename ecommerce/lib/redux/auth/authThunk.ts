@@ -9,6 +9,7 @@ export const loginThunk = createAsyncThunk<
   async ({ email, password }, { rejectWithValue }) => {
     try {
       const res = await loginApi({ email, password });
+       localStorage.setItem("token", res.data.token);
       return {
          user: res.data.user, 
        token: res.data.token};
@@ -28,6 +29,7 @@ export const registerThunk = createAsyncThunk<
   async ({ name, email, password }, { rejectWithValue }) => {
     try {
       const res = await registerApi({ name, email, password });
+       localStorage.setItem("token", res.data.token);
       return { user: res.data.user , token: res.data.token, message: res.data.message };
     } catch (err: any) {
       return rejectWithValue(
@@ -46,7 +48,14 @@ export const getMeThunk = createAsyncThunk<{
       const res = await getMeApi();
       return { user: res.data.user, token: res.data.token };
     } catch (err) {
+       localStorage.removeItem("token");
       return rejectWithValue(null);
     }
+  }
+);
+export const logoutThunk = createAsyncThunk(
+  "auth/logout",
+  async () => {
+    localStorage.removeItem("token");
   }
 );

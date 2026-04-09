@@ -1,7 +1,7 @@
 "use client";
 import { clearAuth } from "@/lib/redux/auth/authSlice";
 import "../../globals.css";
-import { registerThunk } from "@/lib/redux/auth/authThunk";
+import { logoutThunk, registerThunk } from "@/lib/redux/auth/authThunk";
 import { useAppDispatch, useAppSelector } from "@/lib/redux/hooks";
 import Link from "next/link";
 import { redirect, useRouter } from "next/navigation";
@@ -33,7 +33,7 @@ export default function RegisterPage() {
   if(success){
     toast.success("Register successfully!")
     const timer = setTimeout(() => {
-      dispatch(clearAuth())
+      dispatch(logoutThunk())
       router.push("/login");
     },1500 )
     return () => clearTimeout(timer)
