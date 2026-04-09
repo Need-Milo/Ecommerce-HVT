@@ -5,9 +5,9 @@ export const productsData = [
     price: 99,
     stock: 12,
     image: [
-      "http://localhost:5000/images/products/product_1.png",
-      "http://localhost:5000/images/products/product_1.png",
-      "http://localhost:5000/images/products/product_1.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_1.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_1.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_1.png",
     ],
     category: "iPhone 11",
     type: "gadget",
@@ -20,9 +20,9 @@ export const productsData = [
     price: 100,
     stock: 5,
     image: [
-      "http://localhost:5000/images/products/product_3.png",
-      "http://localhost:5000/images/products/product_3.png",
-      "http://localhost:5000/images/products/product_3.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_3.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_3.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_3.png",
     ] ,
     category: "HeadPhone",
     type: "gadget",
@@ -36,9 +36,9 @@ export const productsData = [
     price: 140,
     stock: 18,
     image: [
-      "http://localhost:5000/images/products/product_4.png",
-      "http://localhost:5000/images/products/product_4.png",
-      "http://localhost:5000/images/products/product_4.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_4.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_4.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_4.png"
     ] ,
     category: "SmartWatch",
     type: "gadget",
@@ -51,9 +51,9 @@ export const productsData = [
     price: 360,
     stock: 9,
     image: [
-      "http://localhost:5000/images/products/product_5.png",
-      "http://localhost:5000/images/products/product_5.png",
-      "http://localhost:5000/images/products/product_5.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_5.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_5.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_5.png",
     ] ,
     category: "Washing Machine",
     type: "gadget",
@@ -66,9 +66,9 @@ export const productsData = [
     price: 780,
     stock: 0,
     image: [
-      "http://localhost:5000/images/products/product_6.png",
-      "http://localhost:5000/images/products/product_6.png",
-      "http://localhost:5000/images/products/product_6.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_6.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_6.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_6.png",
     ] ,
     category: "TV",
     type: "gadget",
@@ -82,9 +82,9 @@ export const productsData = [
     price: 250,
     stock: 14,
     image: [
-      "http://localhost:5000/images/products/product_7.png",
-      "http://localhost:5000/images/products/product_7.png",
-      "http://localhost:5000/images/products/product_7.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_7.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_7.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_7.png"
       
     ] ,
     category: "Ceiling fan",
@@ -98,9 +98,9 @@ export const productsData = [
     price: 450,
     stock: 3,
     image: [
-      "http://localhost:5000/images/products/product_8.png",
-      "http://localhost:5000/images/products/product_8.png",
-      "http://localhost:5000/images/products/product_8.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_8.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_8.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_8.png"
     ] ,
     category: "iMac",
     type: "gadget",
@@ -113,9 +113,9 @@ export const productsData = [
     price: 80,
     stock: 7,
     image: [
-      "http://localhost:5000/images/products/product_9.png",
-      "http://localhost:5000/images/products/product_9.png",
-      "http://localhost:5000/images/products/product_9.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_9.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_9.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_9.png"
     ] ,
     category: "Blender",
     type: "gadget",
@@ -128,9 +128,9 @@ export const productsData = [
     price: 70,
     stock: 0,
     image: [
-      "http://localhost:5000/images/products/product_10.png",
-      "http://localhost:5000/images/products/product_10.png",
-      "http://localhost:5000/images/products/product_10.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_10.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_10.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_10.png"
     ] ,
     category: "Speaker",
     type: "gadget",
@@ -143,9 +143,9 @@ export const productsData = [
     price: 300,
     stock: 16,
     image: [
-      "http://localhost:5000/images/products/product_11.png",
-      "http://localhost:5000/images/products/product_11.png",
-      "http://localhost:5000/images/products/product_11.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_11.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_11.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_11.png"
     ] ,
     category: "iPhone 14",
     type: "gadget",
@@ -157,9 +157,9 @@ export const productsData = [
     price: 600,
     stock: 4,
     image: [
-      "http://localhost:5000/images/products/product_12.png",
-      "http://localhost:5000/images/products/product_12.png",
-      "http://localhost:5000/images/products/product_12.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_12.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_12.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_12.png"
     ] ,
     category: "Vacuum Cleaner",
     type: "gadget",
@@ -171,9 +171,9 @@ export const productsData = [
     price: 200,
     stock: 11,
     image: [
-      "http://localhost:5000/images/products/product_13.png",
-      "http://localhost:5000/images/products/product_13.png",
-      "http://localhost:5000/images/products/product_13.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_13.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_13.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_13.png"
     ] ,
     category: "Laptop",
     type: "gadget",
@@ -185,9 +185,9 @@ export const productsData = [
     price: 430,
     stock: 2,
     image: [
-      "http://localhost:5000/images/products/product_14.png",
-      "http://localhost:5000/images/products/product_14.png",
-      "http://localhost:5000/images/products/product_14.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_14.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_14.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_14.png"
     ] ,
     category: "SamSung",
     type: "gadget",
@@ -200,9 +200,9 @@ export const productsData = [
     price: 130,
     stock: 19,
     image: [
-      "http://localhost:5000/images/products/product_15.png",
-      "http://localhost:5000/images/products/product_15.png",
-      "http://localhost:5000/images/products/product_15.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_15.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_15.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_15.png"
     ] ,
     category: "Redmi",
     type: "appliances",
@@ -214,9 +214,9 @@ export const productsData = [
     price: 400,
     stock: 6,
     image: [
-      "http://localhost:5000/images/products/product_16.png",
-      "http://localhost:5000/images/products/product_16.png",
-      "http://localhost:5000/images/products/product_16.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_16.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_16.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_16.png"
     ] ,
     category: "Sony Headphone",
     type: "appliances",
@@ -229,9 +229,9 @@ export const productsData = [
     price: 500,
     stock: 0,
     image: [
-      "http://localhost:5000/images/products/product_17.png",
-      "http://localhost:5000/images/products/product_17.png",
-      "http://localhost:5000/images/products/product_17.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_17.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_17.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_17.png"
     ] ,
     category: "Washing Machine",
     type: "refrigerators",
@@ -244,9 +244,9 @@ export const productsData = [
     price: 800,
     stock: 8,
     image: [
-      "http://localhost:5000/images/products/product_18.png",
-      "http://localhost:5000/images/products/product_18.png",
-      "http://localhost:5000/images/products/product_18.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_18.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_18.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_18.png"
     ] ,
     category: "Refrigerator",
     type: "refrigerators",
@@ -259,9 +259,9 @@ export const productsData = [
     price: 900,
     stock: 13,
     image: [
-      "http://localhost:5000/images/products/product_19.png",
-      "http://localhost:5000/images/products/product_19.png",
-      "http://localhost:5000/images/products/product_19.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_19.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_19.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_19.png"
     ] ,
     category: "Sony Refrigerator",
     type: "gadget",
@@ -275,9 +275,9 @@ export const productsData = [
     price: 450,
     stock: 1,
     image: [
-      "http://localhost:5000/images/products/product_20.png",
-      "http://localhost:5000/images/products/product_20.png",
-      "http://localhost:5000/images/products/product_20.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_20.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_20.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_20.png"
     ] ,
     category: "TV MSI",
     type: "others",
@@ -289,9 +289,9 @@ export const productsData = [
     price: 250,
     stock: 0,
     image: [
-      "http://localhost:5000/images/products/product_21.png",
-      "http://localhost:5000/images/products/product_21.png",
-      "http://localhost:5000/images/products/product_21.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_21.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_21.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_21.png"
     ] ,
     category: "AirPods",
     type: "others",
@@ -303,9 +303,9 @@ export const productsData = [
     price: 150,
     stock: 10,
     image: [
-      "http://localhost:5000/images/products/product_22.png",
-      "http://localhost:5000/images/products/product_22.png",
-      "http://localhost:5000/images/products/product_22.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_22.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_22.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_22.png"
     ] ,
     category: "Camera Canon",
     type: "others",
@@ -317,9 +317,9 @@ export const productsData = [
     price: 550,
     stock: 5,
     image: [
-      "http://localhost:5000/images/products/product_23.png",
-      "http://localhost:5000/images/products/product_23.png",
-      "http://localhost:5000/images/products/product_23.png"
+      "https://ecommerce-hvt.onrender.com/images/products/product_23.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_23.png",
+      "https://ecommerce-hvt.onrender.com/images/products/product_23.png"
     ] ,
     category: "Panasonic",
     type: "others",
