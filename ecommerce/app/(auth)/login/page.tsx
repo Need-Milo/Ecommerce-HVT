@@ -31,9 +31,6 @@ export default function LoginPage() {
   }
 }, [user, router,dispatch]);
 
-useEffect(() => {
-  dispatch(logoutThunk());
-}, [dispatch]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-400 ">
