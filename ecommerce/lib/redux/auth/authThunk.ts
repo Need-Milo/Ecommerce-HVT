@@ -1,6 +1,16 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { getMeApi, loginApi, registerApi } from "../../api/authApi";
 
+const setToken = (token: string) => {
+  localStorage.setItem("token", token)
+  document.cookie = `token=${token}; path=/; max-age=${60 * 60}; SameSite=Lax`
+}
+
+const removeToken = () => {
+  localStorage.removeItem("token")
+  document.cookie = "token=; path=/; max-age=0"
+}
+
 export const loginThunk = createAsyncThunk<
   { user: any; token: string },
   { email: string; password: string }
@@ -9,8 +19,8 @@ export const loginThunk = createAsyncThunk<
   async ({ email, password }, { rejectWithValue }) => {
     try {
       const res = await loginApi({ email, password });
-       localStorage.setItem("token", res.data.token);
-      return {
+        setToken(res.data.token)   
+    return {
          user: res.data.user, 
        token: res.data.token};
     } catch (err: any) {
@@ -29,8 +39,8 @@ export const registerThunk = createAsyncThunk<
   async ({ name, email, password }, { rejectWithValue }) => {
     try {
       const res = await registerApi({ name, email, password });
-       localStorage.setItem("token", res.data.token);
-      return { user: res.data.user , token: res.data.token, message: res.data.message };
+        setToken(res.data.token)  
+    return { user: res.data.user , token: res.data.token, message: res.data.message };
     } catch (err: any) {
       return rejectWithValue(
         err.response?.data?.message || "Register failed"
@@ -48,7 +58,7 @@ export const getMeThunk = createAsyncThunk<{
       const res = await getMeApi();
       return { user: res.data.user, token: res.data.token };
     } catch (err) {
-       localStorage.removeItem("token");
+       removeToken();
       return rejectWithValue(null);
     }
   }
@@ -56,6 +66,6 @@ export const getMeThunk = createAsyncThunk<{
 export const logoutThunk = createAsyncThunk(
   "auth/logout",
   async () => {
-    localStorage.removeItem("token");
+   removeToken()
   }
 );
